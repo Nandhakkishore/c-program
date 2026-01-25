@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+   
+    scanf("%d %d", &a, &b);
+     float c=a/b;
+    float d=a%b;
+
+    printf("Quotient:%.1f and remainder:%.1f",c,d);
+    return 0;
+}
