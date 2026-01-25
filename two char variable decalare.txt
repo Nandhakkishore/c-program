@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    char a='a';
+    char b='r';
+    printf("%c %c",a,b);
+    return 0;
+}
