@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);  
+
+    
+    int and_result = (a > 0) && (b > 0);
+
+   
+    int or_result = (a > 0) || (b > 0);
+
+    printf("%d\n", and_result); 
+    printf("%d",or_result);
+    return 0;
+}
