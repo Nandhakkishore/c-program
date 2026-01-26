@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int ch,a,c;
+    scanf("%d %d", &ch,&a);
+
+     c=(ch<a)?ch:a;
+        printf("%d smallest",c);
+    
+    return 0;
+}
