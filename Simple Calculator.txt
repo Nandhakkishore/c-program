@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, result;
+    char op;
+    scanf("%d %c %d", &a, &op, &b);
+
+    switch(op) {
+        case '+':
+            result = a + b;
+            break;
+        case '-':
+            result = a - b;
+            break;
+        case '*':
+            result = a * b;
+            break;
+        case '/':
+            if(b != 0)
+                result = a / b;
+            else {
+                printf("Error: Division by zero");
+                return 0;
+            }
+            break;
+        case '%':
+            if(b != 0)
+                result = a % b;
+            else {
+                printf("Error: Modulo by zero");
+                return 0;
+            }
+            break;
+        default:
+            printf("Invalid operator");
+            return 0;
+    }
+
+    printf("Result = %d", result);
+
+    return 0;
+}
+
